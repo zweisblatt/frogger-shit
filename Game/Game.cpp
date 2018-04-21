@@ -50,8 +50,8 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
         isRunning=false;
     }
     
-    player = new GameObject("/Users/oliverhodge/Desktop/rocket1.png",0,0);
-    enemy = new GameObject("/Users/oliverhodge/Desktop/rock.png", -100, -100);
+    player = new GameObject("/Users/oliverhodge/Desktop/Game/Assets/rocket1.png",0,0);
+    enemy = new GameObject("/Users/oliverhodge/Desktop/Game/Assets/rock.png", -100, -100);
     map = new Map();
     
     newPlayer.addComponent<PositionComponent>();

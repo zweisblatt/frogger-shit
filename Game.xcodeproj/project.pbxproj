@@ -35,11 +35,13 @@
 		C50FE2EB208BAC2300816307 /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
 		C50FE2EF208BD4D300816307 /* ECS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ECS.hpp; sourceTree = "<group>"; };
 		C50FE2F0208BD4ED00816307 /* Components.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Components.hpp; sourceTree = "<group>"; };
+		C53B7AF2208BE0FD00580E75 /* rocket1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket1.png; sourceTree = "<group>"; };
+		C53B7AF3208BE0FD00580E75 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		C53B7AF4208BE0FD00580E75 /* Sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sky.png; sourceTree = "<group>"; };
 		C5A8E39E208A5B6300EE1869 /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A8E3A1208A5B6300EE1869 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C5A8E3AB208A610500EE1869 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		C5A8E3AC208A610500EE1869 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
-		C5A8E3AF208A6F7D00EE1869 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player.png; path = ../../player.png; sourceTree = "<group>"; };
 		C5A8E45C208A827B00EE1869 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		C5CCE516208A9CA300D2AC66 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		C5CCE51A208AAAD200D2AC66 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
@@ -107,7 +109,9 @@
 		C5A8E3AE208A6F5C00EE1869 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C5A8E3AF208A6F7D00EE1869 /* player.png */,
+				C53B7AF3208BE0FD00580E75 /* rock.png */,
+				C53B7AF2208BE0FD00580E75 /* rocket1.png */,
+				C53B7AF4208BE0FD00580E75 /* Sky.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";

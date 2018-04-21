@@ -26,9 +26,9 @@ int lvl1[20][25] = {
 
 Map::Map(){
     
-    dirt = TextureManager::LoadTexture("/Users/oliverhodge/Desktop/Sky.png");
-    water = TextureManager::LoadTexture("/Users/oliverhodge/Desktop/Sky.png");
-    grass = TextureManager::LoadTexture("/Users/oliverhodge/Desktop/Sky.png");
+    dirt = TextureManager::LoadTexture("/Users/oliverhodge/Desktop/Game/Assets/Sky.png");
+    water = TextureManager::LoadTexture("/Users/oliverhodge/Desktop/Game/Assets/Sky.png");
+    grass = TextureManager::LoadTexture("/Users/oliverhodge/Desktop/Game/Assets/Sky.png");
     loadMap(lvl1);
     src.x = src.y = 0;
     src.w = dest.w = 32;
