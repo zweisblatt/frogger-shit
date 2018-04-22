@@ -2,13 +2,18 @@
 #include "Game.hpp"
 #include "TextureManager.hpp"
 #include "GameObject.hpp"
+#include "PlayerObject.hpp"
 #include "Map.hpp"
 
 #include "Components.hpp"
 //#include "ECS.hpp"
 
-GameObject* player;
+PlayerObject* player;
 GameObject* enemy;
+GameObject* enemy2;
+GameObject* enemy3;
+GameObject* enemy4;
+GameObject* enemy5;
 Map* map;
 
 SDL_Renderer* Game::renderer = nullptr;
@@ -50,8 +55,13 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
         isRunning=false;
     }
     
-    player = new GameObject("/Users/oliverhodge/Desktop/Game/Assets/rocket1.png",0,0);
-    enemy = new GameObject("/Users/oliverhodge/Desktop/Game/Assets/rock.png", -100, -100);
+    player = new PlayerObject("/Users/zachweisblatt/Desktop/rocket1.png",0,550);
+    enemy = new GameObject("/Users/zachweisblatt/Desktop/rock.png",300,0);
+    enemy2 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",0,-10);
+    enemy3 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",100,-60);
+    enemy4 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",640,-100);
+    enemy5 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",200,-150);
+
     map = new Map();
     
     newPlayer.addComponent<PositionComponent>();
@@ -71,12 +81,25 @@ void Game::handleEvents(){
             break;
     }
     
+    const Uint8* currentKeyState = SDL_GetKeyboardState(NULL);
+    if (currentKeyState[SDL_SCANCODE_A] || currentKeyState[SDL_SCANCODE_LEFT])
+    {
+        player->moveLeft();
+    }
+    if (currentKeyState[SDL_SCANCODE_D] || currentKeyState[SDL_SCANCODE_RIGHT])
+    {
+        player->moveRight();
+    }
 }
 
 void Game::update(){
     
     player->update();
     enemy->update();
+    enemy2->update();
+    enemy3->update();
+    enemy4->update();
+    enemy5->update();
     manager.update();
     std::cout<<newPlayer.getComponent<PositionComponent>().x()<<","<<newPlayer.getComponent<PositionComponent>().y()<<std::endl;
     
@@ -88,6 +111,10 @@ void Game::render(){
     map->drawMap();
     player->render();
     enemy->render();
+    enemy2->render();
+    enemy3->render();
+    enemy4->render();
+    enemy5->render();
     SDL_RenderPresent(renderer);
     
 }

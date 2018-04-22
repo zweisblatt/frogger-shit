@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B15BD7E2208C210700816B00 /* PlayerObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15BD7E0208C210700816B00 /* PlayerObject.cpp */; };
 		C50FE2E9208B979D00816307 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C50FE2E7208B979D00816307 /* GameObject.cpp */; };
 		C50FE2EC208BAC2300816307 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C50FE2EA208BAC2300816307 /* Map.cpp */; };
 		C5A8E3A2208A5B6300EE1869 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5A8E3A1208A5B6300EE1869 /* main.cpp */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B15BD7E0208C210700816B00 /* PlayerObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerObject.cpp; sourceTree = "<group>"; };
+		B15BD7E1208C210700816B00 /* PlayerObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerObject.hpp; sourceTree = "<group>"; };
 		C50FE2E7208B979D00816307 /* GameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
 		C50FE2E8208B979D00816307 /* GameObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
 		C50FE2EA208BAC2300816307 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 		C5A8E3A0208A5B6300EE1869 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				B15BD7E0208C210700816B00 /* PlayerObject.cpp */,
+				B15BD7E1208C210700816B00 /* PlayerObject.hpp */,
 				C5A8E3A1208A5B6300EE1869 /* main.cpp */,
 				C5A8E3AB208A610500EE1869 /* Game.cpp */,
 				C5A8E3AC208A610500EE1869 /* Game.hpp */,
@@ -174,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C50FE2E9208B979D00816307 /* GameObject.cpp in Sources */,
+				B15BD7E2208C210700816B00 /* PlayerObject.cpp in Sources */,
 				C50FE2EC208BAC2300816307 /* Map.cpp in Sources */,
 				C5A8E3A2208A5B6300EE1869 /* main.cpp in Sources */,
 				C5A8E3AD208A610500EE1869 /* Game.cpp in Sources */,
