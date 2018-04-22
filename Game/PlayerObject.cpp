@@ -26,9 +26,19 @@ void PlayerObject::render(){
 
 void PlayerObject::moveLeft()
 {
-    xpos -= 10;
+    if (xpos <= -20) {
+        xpos = -20;
+    } else {
+        xpos -= 5;
+    }
+    
 }
 void PlayerObject::moveRight()
 {
-    xpos += 10;
+    if (xpos >= 730) {
+        xpos = 730;
+    } else {
+        xpos += 5;
+    }
+    
 }

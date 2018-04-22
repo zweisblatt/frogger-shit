@@ -26,7 +26,8 @@ private:
     bool isRunning;
     SDL_Window *window;
     
-    
+    unsigned int countedFrames;
+    unsigned int asteroidSpawnRate;
     
 };
 

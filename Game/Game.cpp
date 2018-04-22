@@ -51,7 +51,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
         isRunning=true;
     }
     
-    else{
+    else {
         isRunning=false;
     }
     
@@ -60,7 +60,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     enemy2 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",0,-10);
     enemy3 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",100,-60);
     enemy4 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",640,-100);
-    enemy5 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",200,-150);
+    enemy5 = new GameObject("/Users/zachweisblatt/Desktop/rock.png",740,-150);
 
     map = new Map();
     
@@ -95,6 +95,11 @@ void Game::handleEvents(){
 void Game::update(){
     
     player->update();
+    if (countedFrames % asteroidSpawnRate == 0)
+    {
+        asteroid = new Asteroid(renderer);
+        asteroidList.push_back(asteroid);
+    }
     enemy->update();
     enemy2->update();
     enemy3->update();
